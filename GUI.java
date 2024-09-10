@@ -8,7 +8,7 @@ public class GUI {
     private int numOfMC = 0;
     private int discount = 0;
 
-    private JButton bwButton = new JButton("Banana Milk: 0");
+    private JButton bwButton = new JButton("Bananas: 0");
     private JButton apButton = new JButton("Airpods: 0");
     private JButton mcButton = new JButton("Minecraft: Java Edition: 0");
     private JButton checkOut = new JButton("Checkout");
@@ -25,7 +25,7 @@ public class GUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 numOfBW++;
-                bwButton.setText("Banana Milk: x" + numOfBW);
+                bwButton.setText("Bananas: x" + numOfBW);
             }
         });
 
@@ -79,7 +79,7 @@ public class GUI {
                 panel.removeAll();
                 panel.updateUI();
 
-                JLabel bwLabel = new JLabel(numOfBW + "x Banana Milk");
+                JLabel bwLabel = new JLabel(numOfBW + "x Bananas");
                 JLabel apLabel = new JLabel(numOfAP + "x Airpods");
                 JLabel mcLabel = new JLabel(numOfMC + "x Minecraft: Java Edition");
                 JLabel empty = new JLabel("Cart is Empty");
